@@ -45,7 +45,132 @@ Apply the following attack focus based on stage:
 - pre-launch → attack whether the go-to-market assumption holds
 - investment-ready → attack from the perspective of a skeptical seed investor
 
-(이하 Lens 블록 전체 그대로 붙여라)
+---
+
+LENS REFERENCE:
+
+Principle 10 (Value Relativity):
+Different people optimize for different things.
+What the founder believes is core value may be
+completely irrelevant to the actual buyer.
+Attack this gap.
+
+Principle 8 (The Dominant Sun):
+Every market has one assumption so dominant
+it makes everything else invisible.
+Remove that assumption and show what collapses.
+
+Principles 1 & 6 (Paradox + Reframing):
+The most likely failure point, if structurally redesigned,
+becomes the thing competitors cannot replicate.
+Show what that redesign would require, not whether it is possible.
+
+---
+
+Analyze the idea using exactly three lenses.
+Follow the exact format for each lens. Do not deviate.
+
+---
+
+LENS 1 — VALUE DELUSION (Heraclitus Principle 10)
+
+Step 1: State what the founder believes customers will pay for.
+        One sentence.
+Step 2: State what customers actually optimize for in this category.
+        One sentence.
+Step 3: Show the gap between Step 1 and Step 2.
+        Be specific to this idea. Not generic startup advice.
+Step 4: Ask one question that attacks a hidden structural weakness.
+        Not a tactical detail.
+        This must be a question the founder has no ready answer for.
+
+---
+
+LENS 2 — THE DOMINANT SUN (Heraclitus Principle 8)
+
+Step 1: Name the single biggest assumption this entire market runs on.
+Step 2: Remove that assumption completely.
+Step 3: Describe what happens to this idea when that assumption is gone.
+        Show the sequence of events.
+Step 4: Ask one question that attacks a hidden structural weakness.
+        Not a tactical detail.
+        This must be a question the founder has no ready answer for.
+
+---
+
+LENS 3 — COLLAPSE → REVERSAL (Heraclitus Principles 1 & 6)
+
+Step 1: Name the most likely reason this idea fails within 6 months.
+Step 2: Describe exactly how that failure happens.
+        Show the sequence of events.
+Step 3: Show the one structural change that would make this collapse point
+        impossible for competitors to replicate.
+        Do not say whether this is achievable.
+        Just show what it would require.
+Step 4: Ask one question that attacks a hidden structural weakness.
+        Not a tactical detail.
+        This must be a question the founder has no ready answer for.
+
+---
+
+RULES — follow without exception:
+- No pros and cons lists.
+- No motivational language.
+- No hedging phrases such as "it depends" or "consider whether".
+- No generic startup advice.
+- Every claim must be specific to THIS idea.
+- If you lack necessary information, state precisely
+  what is missing inside Step 1 of the relevant lens.
+- Each step must be 2 to 4 sentences. Do not exceed this.
+
+---
+
+END FORMAT:
+
+Close with a single sentence.
+Name what this idea could become if the core structural problem is solved.
+Do not explain how to solve it.
+Do not soften it.
+Leave the tension unresolved.
+
+---
+
+OUTPUT CONSTRAINTS:
+
+- Return ONLY valid JSON.
+- Do not include any text before or after the JSON.
+- Do not wrap the JSON in markdown or backticks.
+- Keys must match the specified structure exactly.
+- Do not rename, remove, or add keys.
+- If the output would violate these constraints,
+  regenerate internally until compliant.
+
+---
+
+Return your response in this exact JSON structure:
+
+{
+  "stage": "",
+  "lens1": {
+    "step1": "",
+    "step2": "",
+    "step3": "",
+    "question": ""
+  },
+  "lens2": {
+    "step1": "",
+    "step2": "",
+    "step3": "",
+    "question": ""
+  },
+  "lens3": {
+    "step1": "",
+    "step2": "",
+    "step3": "",
+    "question": ""
+  },
+  "closing": ""
+}
 `;
 
   try {
